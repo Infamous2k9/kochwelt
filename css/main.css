@@ -33,10 +33,6 @@ p {
     box-shadow: 0px 1px 35px rgba(0, 0, 0, 0.5);
 }
 
-.header-brand-logo {
-    height: 72px;
-}
-
 .header-nav {
     height: 100%;
     display: flex;
@@ -50,6 +46,7 @@ p {
 
 .header-nav li,
 a {
+    font-size: 24px;
     padding: 8px;
     list-style: none;
     text-decoration: none;
@@ -113,6 +110,10 @@ footer {
         width: auto;
         margin-left: 8px;
     }
+
+    .header-brand-logo {
+        height: 32px;
+    }
 }
 
 
@@ -131,6 +132,10 @@ footer {
         height: 32px;
         width: auto;
         margin-left: 16px;
+    }
+
+    .header-brand-logo {
+        height: 48px;
     }
 }
 
