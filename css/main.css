@@ -4,6 +4,22 @@
     font-family: Raleway-Regular;
 }
 
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p{
+    font-size: 24px;
+}
+
 /* das am besten immer unten im file lassen */
 @font-face {
     font-family: 'Raleway-Regular';
