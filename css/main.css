@@ -20,6 +20,10 @@ p{
     font-size: 24px;
 }
 
+footer {
+    background: #232323;
+}
+
 /* das am besten immer unten im file lassen */
 @font-face {
     font-family: 'Raleway-Regular';
