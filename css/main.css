@@ -21,7 +21,76 @@ p{
 }
 
 footer {
-    background: #232323;
+    background: #2f2f2f;
+    height: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 160px 0px 160px;
+}
+.footer_img_1 {
+    filter: invert(1);
+}
+
+.footer_img_2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_img_2 img {
+    height: 48px;
+    width: auto;
+    margin-left: 32px;
+}
+
+.footer_img_2 img:hover {
+    filter: drop-shadow(0px 0px 8px #00b600);
+    cursor: pointer;
+}
+
+/* Mobile-Version */
+@media(max-width: 767px) and (min-width: 320px) {
+    footer {
+        height: 180px !important;
+        padding: 0px 32px 0px 32px;
+    }
+
+    .footer_img_1 img {
+        height: 32px;
+        width: auto;
+    }
+
+    .footer_img_2 img {
+        height: 16px;
+        width: auto;
+        margin-left: 8px;
+    }
+}
+
+/* Tablet-Version */
+@media(max-width: 1280px) and (min-width: 768px) {
+    footer {
+        height: 180px !important;
+        padding: 0px 32px 0px 32px;
+    }
+
+    .footer_img_1 img {
+        height: 48px;
+        width: auto;
+    }
+
+    .footer_img_2 img {
+        height: 32px;
+        width: auto;
+        margin-left: 16px;
+    }
+}
+
+/* Ultrawide-Version */
+@media(max-width: 3440px) and (min-width: 1921px) {
+    footer {
+        justify-content: space-around;
+    }
 }
 
 /* das am besten immer unten im file lassen */
