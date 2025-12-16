@@ -45,7 +45,7 @@
             </div>
             <ul class="nav-list">
                 <li>
-                    <a href="index.html" class="active">Start</a>
+                    <a href="index.html">Start</a>
                 </li>
                 <li class="dropdown">
                     <a Rezept href="recipe.html">Rezept des Tages</a>
@@ -151,5 +151,12 @@
         </div>
     </footer>
 </body>
-
+<script>
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navMobile = document.getElementById('navMobile');
+    hamburgerMenu.addEventListener('click', (event) => {
+        hamburgerMenu.classList.toggle('is-active');
+        navMobile.classList.toggle('d-none');
+    });
+</script>
 </html>
