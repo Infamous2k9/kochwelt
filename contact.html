@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <title>Kochwelt</title>
 </head>
 
@@ -31,8 +35,25 @@
             </ul>
         </nav>
     </header>
-
-
+    <section class="contact-form">
+        <div class="container">
+            <form id="contact" action="" method="post">
+                <h3>Kontaktiere uns</h3>
+                <fieldset>
+                    <input placeholder="Dein Name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Deine Email Adresse" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Deine Nachricht...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Abschicken</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
     <footer>
         <div class="footer_img_1">
             <img src="./img/logo.png" alt="logo chefs hat and text kochwelt white">
