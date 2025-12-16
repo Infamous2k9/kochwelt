@@ -66,6 +66,13 @@ section {
     font-size: 24px;
 }
 
+.rechner-input button {
+    background: #019b01;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
 .content-table {
     display: flex;
 }
