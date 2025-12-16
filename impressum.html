@@ -15,12 +15,44 @@
         </a>
 
         <nav class="header-nav">
-            <ul>
+            <div class="hamburger" id="hamburger-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="nav-mobile">
+                <ul class="nav-mobile-list d-none" id="navMobile">
+                    <li><a href="index.html">Start</a></li>
+                    <li>
+                        <a href="recipe.html">Rezept des Tages</a>
+                        <ul class="dropdown-items">
+                            <li>
+                                <a href="recipe-andre.html">Rezept Andre</a>
+                            </li>
+                            <li>
+                                <a href="recipe-maik.html">Rezept Maik</a>
+                            </li>
+                            <li>
+                                <a href="recipe-sven.html">Rezept Sven</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </div>
+            <ul class="nav-list">
                 <li>
                     <a href="index.html">Start</a>
                 </li>
                 <li>
-                    <a href="recipe.html">Rezept des Tages</a>
+                    <a href="recipe.html" class="dropdown-menu">Rezept des Tages</a>
+                    <div class="dropdown-list">
+                        <a href="recipe-andre.html">Rezept Andre</a>
+                        <a href="recipe-maik.html">Rezept Maik</a>
+                        <a href="recipe-sven.html">Rezept Andre</a>
+
+                    </div>
                 </li>
                 <li>
                     <a href="contact.html">Kontakt</a>
@@ -44,5 +76,13 @@
         </div>
     </footer>
 </body>
+<script>
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navMobile = document.getElementById('navMobile');
+    hamburgerMenu.addEventListener('click', (event) => {
+        hamburgerMenu.classList.toggle('is-active');
+        navMobile.classList.toggle('d-none');
+    });
+</script>
 
 </html>
