@@ -80,27 +80,27 @@
 
             <ul class="batches">
                 <li>
-                    <span class="icon-time"></span>
+                    <img src="./img/icons/clock-regular.svg" class="icon-time">
                     <span>30 Min.</span>
                 </li>
                 <li>
-                    <span class="icon-brain"></span>
+                    <img src="./img/icons/brain-solid.svg" class="icon-brain">
                     <span>Einfach</span>
                 </li>
                 <li>
-                    <span class="icon-calender"></span>
+                    <img src="./img/icons/calendar-alt-regular.svg" class="icon-calender">
                     <span>16.12.2025</span>
                 </li>
             </ul>
         </header>
 
         <section class="ingridients">
+            <p>Zutaten für</p>
+            <div>
+                <input type="number" id="servingsAmount" min="1" data-servings-current-amount="4" data-servings-base-amount="4" value="4">
+                <button id="servingBtn">Portionen</button>
+            </div>
             <table>
-                <th>
-                    <span>Zutaten für</span>
-                    <input type="number" id="servingsAmount" min="1" data-servings-current-amount="4" data-servings-base-amount="4" value="4">
-                    <button id="servingBtn">Portionen</button>
-                </th>
                 <tr>
                     <td><span id="ingredient" data-ingridient-amount="1" data-ingridient-base-amount="1"></span></td>
                     <td><span>Zwiebel</span></td>
