@@ -27,6 +27,7 @@ body {
 #contact {
     background: #dcdcdc;
     padding: 25px;
+    border-radius: 12px;
 }
 
 #contact h3 {
