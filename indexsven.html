@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="./css/mainsven.css">
+    <link rel="stylesheet" href="./css/pagesven.css">
+
+    <title>Kochwelt</title>
+</head>
+
+<body>
+    <header class="header-site">
+        <a href="index.html">
+            <img src="./img/logo.png" alt="Headline Brand Logo" class="header-brand-logo">
+        </a>
+
+        <nav class="header-nav">
+            <div class="hamburger" id="hamburger-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="nav-mobile">
+                <ul class="nav-mobile-list d-none" id="navMobile">
+                    <li><a href="index.html">Start</a></li>
+                    <li>
+                        <a href="recipe.html">Rezept des Tages</a>
+                        <ul class="dropdown-items">
+                            <li>
+                                <a href="recipe-andre.html">Rezept Andre</a>
+                            </li>
+                            <li>
+                                <a href="recipe-maik.html">Rezept Maik</a>
+                            </li>
+                            <li>
+                                <a href="recipe-sven.html">Rezept Sven</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="active">Start</a>
+                </li>
+                <li class="dropdown">
+                    <a Rezept href="recipe.html">Rezept des Tages</a>
+                    <div class="dropdown-content">
+                        <a href="recipe-andre.html">Rezept Andre</a>
+                        <a href="recipe-maik.html">Rezept Maik</a>
+                        <a href="recipe-sven.html">Rezept Andre</a>
+
+                    </div>
+                </li>
+                <li>
+                    <a href="contact.html">Kontakt</a>
+                </li>
+                <li>
+                    <a href="impressum.html">Impressum</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="container1" class="container">
+            <section class="section1">
+                <div class="section1-left">
+                    <img class="hero-img" src="img/pic1.jpg" alt="">
+                </div>
+                <div class="section1-right">
+                    <div class="textbox">
+                        <h2>Französische Croissants</h2>
+                        <p class="text">bla bla bla</p>
+                    </div>
+                        <a class="btn" href="rezept1.html" style=" margin-bottom: 50px; ">Rezept öffnen</a>
+                 </div>
+            </section>
+        </div>
+        <div id="container2" class="container">
+            <section class="section2">
+                <div class="section2-top">
+                    <h2 class="title-center">Lust auf was Neues?</h2>
+                </div>
+                <div class="section2-bottom">
+                    <div class="cards">
+                        <a class="card" href="rezept1.html">
+                            <div class="card-img">
+                                <img src="./img/andre.png" alt="#">
+                            </div>
+                            <div class="card-caption">Andre</div>
+                        </a>
+
+                        <a class="card" href="rezept2.html">
+                            <div class="card-img">
+                                <img src="./img/andre.png" alt="#">
+                            </div>
+                            <div class="card-caption">Maik</div>
+                        </a>
+
+                        <a class="card" href="rezept3.html">
+                            <div class="card-img">
+                                <img src="./img/andre.png" alt="#">
+                            </div>
+                            <div class="card-caption">Sven</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="container3" class="container">
+            <section class="section3">
+                <div class="section3-top">
+                    <h2 class="title-center">Pfanne vs. Wok - Was ist besser?</h2>
+                </div>
+                <div class="section3-bottom">
+                    <div class="compare-grid">
+                        <p class="compare-text">
+                            Noch weiß keiner, wer gewinnt! Der Wok nutzt seine asiatischen Kampfkünste (Stir-Fry-Fu!), tanzt schnell und setzt auf Hitze.
+                            Sein Gegner, die Pfanne, kontert cool mit Anti-Anhaftung und schlägt mit Omelett-Roundhouse-Kicks zu.
+                            KLATSCH! Die Schlacht ist eröffnet!
+                        </p>
+                        <div class="card-img">
+                            <img src="./img/wok.jpg" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_img_1">
+            <img src="./img/logo.png" alt="logo chefs hat and text kochwelt white">
+        </div>
+        <div class="footer_img_2">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook_white.png" alt="facebook logo white hover green"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram_white.png" alt="instagramm logo white hover green"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="./img/twitter_white.png" alt="twitter logo white hover green"></a>
+        </div>
+    </footer>
+</body>
+<script>
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navMobile = document.getElementById('navMobile');
+    hamburgerMenu.addEventListener('click', (event) => {
+        hamburgerMenu.classList.toggle('is-active');
+        navMobile.classList.toggle('d-none');
+    });
+</script>
+
+</html>
