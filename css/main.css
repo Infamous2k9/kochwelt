@@ -147,41 +147,197 @@ a {
     border-bottom: 0;
 }
 
+
 /* conten site */
 
 main {
     margin-top: 60px;
-    padding: 0px 160px 0px 160px;
+    height: 100vh;
 }
 
 .main-recipe-day {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 32px;
+    padding: 0 32px 0 32px;
 }
 
 .main-recipe-day h1 {
+    font-size: 36px;
     margin-bottom: 32px;
+    text-align: center;
 }
 
 .main-day-recipe-txt-btn {
     display: flex;
     flex-direction: column;
-    gap: 160px;
+    gap: 32px;
 }
 
-
+.main-day-recipe-txt-btn p {
+    font-size: 16px;
+}
 
 .main-recipe-day img {
     border-radius: 8px;
-    max-height: 500px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    display: block;
 }
 
 .main-recipe-day button {
-    width: 30%;
+    width: 100%;
 }
+
+
+/* content Suggestion */
+
+.suggestion {
+    background-color: #6666661c;
+    padding: 16px 32px;
+    margin-top: 32px;
+}
+
+.suggestion h2 {
+    font-size: 30px;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.suggestion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card img {
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+/* content Tipp */
+
+.tipp {
+    padding: 0 32px 0 32px;
+}
+
+.tipp h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.tipp p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.tipp-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.tipp-content img {
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@media (min-width: 767px) {
+    .quick-links a,
+    .quick-links span {
+        visibility: visible !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .main-recipe-day {
+        flex-direction: row;
+        padding: 0 160px 0 160px;
+    }
+    .main-recipe-day h1 {
+        font-size: 60px;
+        text-align: left;
+    }
+    .main-recipe-day p {
+        font-size: 30px;
+    }
+    .main-day-recipe-txt-btn {
+        max-width: 900px;
+        gap: 32px;
+    }
+    .main-recipe-day button {
+        width: 30%;
+    }
+    .suggestion {
+        padding: 32px 160px 32px 160px;
+    }
+    .suggestion h2 {
+        font-size: 36px;
+    }
+    .suggestion-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card img {
+        height: 300px;
+        width: 300px;
+    }
+    .card p {
+        font-size: 32px;
+    }
+    .tipp {
+        padding: 0 160px 0 160px;
+    }
+    .tipp h2 {
+        font-size: 36px;
+    }
+    .tipp-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .tipp-content p {
+        font-size: 30px;
+        text-align: left;
+    }
+    .tipp-content img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .main-recipe-day {
+        padding-left: calc((100% - 1440px) / 2);
+        padding-right: calc((100% - 1440px) / 2);
+    }
+    .suggestion {
+        padding-left: calc((100% - 1440px) / 2);
+        padding-right: calc((100% - 1440px) / 2);
+    }
+    .tipp {
+        padding-left: calc((100% - 1440px) / 2);
+        padding-right: calc((100% - 1440px) / 2);
+    }
+}
+
 
 /* footer site */
 
@@ -216,6 +372,7 @@ footer {
 
 .quick-links a,
 .quick-links span {
+    visibility: hidden;
     color: white;
 }
 
