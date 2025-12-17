@@ -1,182 +1,139 @@
-
-.error-box {
-    background-color: #ffe6e6;
-    color: #d8000c;
-    border: 1px solid #d8000c;
-    padding: 12px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-rendering: optimizeLegibility;
 }
 
-/* Roter Rahmen für vergessene Eingabefelder */
-.input-error {
-    border-color: #d8000c !important;
-    background-color: #fffafa !important;
-    box-shadow: 0 0 0 3px rgba(216, 0, 12, 0.1) !important;
+body {
+    line-height: 30px;
 }
 
-/* Hilfsklasse zum Verstecken (hast du schon, aber zur Sicherheit) */
-.d-none {
-    display: none !important;
-}
-.contact-section {
-    background-color: #f0f0f0; /* Grauer Hintergrund wie im Beispiel */
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center; /* Zentriert den Inhalt horizontal */
-    align-items: flex-start;
-}
-
-.contact-container {
-    background-color: white;
+.container {
+    max-width: 400px;
     width: 100%;
-    max-width: 700px; /* Maximale Breite des Formulars */
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 24px; /* Abstand zwischen den Elementen */
-}
-
-.contact-headline {
-    text-align: center;
-    border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 16px;
-    margin-bottom: 8px;
-    color: #2f2f2f;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.form-group label {
-    font-weight: bold;
-    color: #4b5563;
-    font-size: 18px;
-    margin-left: 4px;
-}
-
-.input-wrapper {
+    height: 100vh;
+    margin: 0 auto;
     position: relative;
-    display: flex;
-    align-items: center;
+    margin-top: 120px;
 }
 
-/* Styling für Inputs und Textarea */
-.form-input, 
-.form-textarea {
-    width: 100%;
-    padding: 14px 16px;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    font-size: 16px;
-    background-color: #fff;
-    outline: none;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    font-family: 'Raleway-Regular', sans-serif;
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact {
+    background: #dcdcdc;
+    padding: 25px;
+    border-radius: 12px;
 }
 
-.form-textarea {
-    resize: vertical; /* Erlaubt nur vertikales Ziehen */
-    min-height: 150px;
-}
-
-.form-input:focus,
-.form-textarea:focus {
-    border-color: #008000;
-    box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.1);
-}
-
-/* Button Anpassung für volle Breite im Formular */
-.contact-container button {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.contact-section {
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-}
-
-.contact-container {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    max-width: 600px;
-    width: 100%;
-}
-
-.contact-title {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    border-bottom: 2px solid #eaeaea;
-    padding-bottom: 10px;
-}
-
-.input-group {
-    margin-bottom: 15px;
-}
-
-.input-group label {
+#contact h3 {
     display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
-.input-group input, .input-group textarea {
+#contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
     width: 100%;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.input-group textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-.btn-submit {
-    width: 100%;
-    background-color: #4CAF50; /* Das Grün von Kochwelt */
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.btn-submit:hover {
-    background-color: #45a049;
-}
-
-.form-hint {
-    background-color: #ffebee;
-    color: #c62828;
+    background: #FFF;
+    margin: 0 0 5px;
     padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    border: 1px solid #ef9a9a;
 }
 
-.d-none { display: none; }
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    border: none;
+    background: #008000;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #019b01;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+.thanks {
+    max-width: 600px;
+    text-align: center;
+}
+
+.thanks h1 {
+    padding: 32px;
+}
+
+.thanks a {
+    color: #008000;
+}
+
+.thanks a:hover {
+    cursor: pointer;
+    color: #019b01;
+}
