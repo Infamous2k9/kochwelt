@@ -214,6 +214,16 @@ footer {
     cursor: pointer;
 }
 
+.quick-links a,
+.quick-links span {
+    color: white;
+}
+
+.quick-links a:hover {
+    cursor: pointer;
+    color: #00b600;
+}
+
 button {
     cursor: pointer;
     border: none;
