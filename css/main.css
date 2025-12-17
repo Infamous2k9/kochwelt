@@ -419,6 +419,7 @@ footer {
 .quick-links span {
     visibility: hidden;
     color: white;
+    font-size: 1px;
 }
 
 .quick-links a:hover {
