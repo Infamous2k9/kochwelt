@@ -1,0 +1,154 @@
+section {
+    margin-top: 60px;
+    padding: 0px 160px 0px 160px;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.meta-info {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.meta-info-itme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #6666661c;
+    height: 12px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.meta-info-itme img {
+    height: 16px;
+    width: auto;
+}
+
+.rechner-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rechner-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px 0px 0px 12px;
+    background: #FFF;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+.rechner-input button {
+    cursor: pointer;
+    border: none;
+    background: #008000;
+    color: #FFF;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.rechner-input button:hover {
+    background: #019b01;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.content-table {
+    display: flex;
+}
+
+table {
+    width: 100%;
+    font-size: 24px;
+    display: flex;
+    margin-top: 24px;
+}
+
+tbody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+th {
+    display: flex;
+    justify-content: flex-start;
+}
+
+td:nth-child(even) {
+    background: #6666661c;
+    border-radius: 12px;
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+}
+
+td {
+    display: flex;
+    padding: 16px 50px 16px 50px;
+}
+
+.content-info {
+    margin-top: 32px;
+}
+
+.section-footer {
+    margin-bottom: 60px;
+}
+
+.section-footer h3 {
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+
+.section-footer img {
+    height: 100px;
+    border-radius: 50%
+}
+
+.img_txt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+/* Mobile-Version */
+
+@media(max-width: 767px) and (min-width: 320px) {
+
+}
+
+/* Tablet-Version */
+
+@media(max-width: 1280px) and (min-width: 768px) {
+
+}
+
+/* Ultrawide-Version */
+
+@media(max-width: 3440px) and (min-width: 1921px) {
+
+}
