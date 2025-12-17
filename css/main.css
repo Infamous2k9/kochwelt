@@ -266,7 +266,7 @@ main {
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1280px) and (max-width: 1920px) {
     .main-recipe-day {
         flex-direction: row;
         padding: 0 160px 0 160px;
@@ -322,7 +322,7 @@ main {
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
     .main-recipe-day {
         padding-left: calc((100% - 1440px) / 2);
         padding-right: calc((100% - 1440px) / 2);
