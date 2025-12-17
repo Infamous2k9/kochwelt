@@ -5,7 +5,7 @@
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 60px;
 }
 
 h2 {
@@ -146,6 +146,44 @@ a {
     text-decoration: underline;
     border-bottom: 0;
 }
+
+/* conten site */
+
+main {
+    margin-top: 60px;
+    padding: 0px 160px 0px 160px;
+}
+
+.main-recipe-day {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.main-recipe-day h1 {
+    margin-bottom: 32px;
+}
+
+.main-day-recipe-txt-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+
+
+.main-recipe-day img {
+    border-radius: 8px;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.main-recipe-day button {
+    width: 30%;
+}
+
+/* footer site */
 
 footer {
     background: #2f2f2f;
@@ -297,7 +335,7 @@ button:hover {
 }
 
 
-/* das am besten immer unten im file lassen */
+/* font */
 
 @font-face {
     font-family: 'Raleway-Regular';
