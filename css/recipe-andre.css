@@ -231,7 +231,7 @@ table tr:nth-child(even) {
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1280px) and (max-width: 1920px) {
     .content {
         padding-left: 160px;
         padding-right: 160px;
@@ -300,7 +300,7 @@ table tr:nth-child(even) {
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
     .content {
         padding-left: calc((100% - 1440px) / 2);
         padding-right: calc((100% - 1440px) / 2);

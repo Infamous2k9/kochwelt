@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/recipe-sven.css">
     <title>Kochwelt - Rezept Sven</title>
 </head>
+
 <body>
     <header class="header-site">
         <a href="index.html">
@@ -66,11 +67,11 @@
     </header>
     <section>
         <div class="section-header">
-          
+
             <h2>Linsen-Pita mit Harissa-Joghurt</h2>
             <h3>Pitas gefüllt mit würzigem Gemüse und roten Linsen</h3>
-         
-            <img src="./img/svenrezept.png" alt="">
+
+            <img src="./img/pitabrot.png" alt="">
             <div class="meta-info">
                 <div class="meta-info-itme"><img src="./img/icons/clock-regular.svg" alt="">35 Min</div>
                 <div class="meta-info-itme"><img src="./img/icons/brain-solid.svg" alt="">simpel</div>
@@ -80,17 +81,17 @@
         <div class="section-content">
             <div class="rechner-input">
                 <p>Zutaten für:</p>
-                
-                <input placeholder="2" min="1" id="servingsAmount" type="number" value="2" >
-               
+
+                <input placeholder="2" min="1" id="servingsAmount" type="number" value="2">
+
                 <button type="submit" id="calculateBtn">Portionen</button>
             </div>
-            
+
             <div class="content-table">
                 <table>
                     <tr>
                         <th>Zutaten:</th>
-                       
+
                         <td data-base-qty="10">10 g Minze</td>
                         <td data-base-qty="4">4 Stück Pita-Brote</td>
                         <td data-base-qty="1">1 g Schwarzkümmel</td>
@@ -99,7 +100,7 @@
                         <td data-base-qty="150">150 g rote Linsen</td>
                     </tr>
                     <tr>
-                        <td></td> 
+                        <td></td>
                         <td data-base-qty="2">2 Stück Tomate</td>
                         <td data-base-qty="1">1 Stück Zucchini</td>
                         <td data-base-qty="2">2 Stück Frühlingszwiebel</td>
@@ -116,22 +117,16 @@
                     <div class="meta-info-itme"><img src="./img/icons/clock-regular.svg" alt="">ca. 10 Minuten</div>
                     <div class="meta-info-itme"><img src="./img/icons/clock-regular.svg" alt="">Gesamtzeit ca. 35 Minuten</div>
                 </div>
-              
+
                 <p>
-                    <strong>°Linsen vorbereiten</strong><br>
-                    Die roten Linsen in einem Sieb kalt abspülen.<br>
-                    Zwiebel und Knoblauch schälen und fein würfeln.<br>
+                    <strong>°Linsen vorbereiten</strong><br> Die roten Linsen in einem Sieb kalt abspülen.<br> Zwiebel und Knoblauch schälen und fein würfeln.<br>
                     <br>
-                    <strong>°Gemüse und Linsen kochen</strong><br>
-                    Etwas Öl in einem Topf erhitzen. Zwiebel und Knoblauch darin andünsten. Schwarzkümmel kurz mitrösten.<br>
-                    Linsen und Gemüsebrühe hinzufügen und aufkochen lassen. Zugedeckt ca. 15-20 Minuten köcheln lassen, bis die Linsen weich sind.<br>
-                    Tomate und Zucchini in kleine Würfel schneiden und zusammen mit den Linsen weitere 5 Minuten köcheln lassen. Mit Salz und Pfeffer abschmecken.<br>
+                    <strong>°Gemüse und Linsen kochen</strong><br> Etwas Öl in einem Topf erhitzen. Zwiebel und Knoblauch darin andünsten. Schwarzkümmel kurz mitrösten.<br> Linsen und Gemüsebrühe hinzufügen und aufkochen lassen. Zugedeckt ca. 15-20 Minuten
+                    köcheln lassen, bis die Linsen weich sind.<br> Tomate und Zucchini in kleine Würfel schneiden und zusammen mit den Linsen weitere 5 Minuten köcheln lassen. Mit Salz und Pfeffer abschmecken.<br>
                     <br>
                     <strong>°Harissa-Joghurt und Finish</strong>
-					<br>Die Frühlingszwiebeln und Minze fein schneiden. <br>
-                    Joghurt mit Harissa verrühren und mit Salz abschmecken.<br>
-                    Die Pita-Brote kurz erwärmen (in der Pfanne oder im Toaster).<br>
-                    Die Brote aufschneiden, mit der Linsen-Gemüse-Füllung befüllen und mit einem Klecks Harissa-Joghurt, Frühlingszwiebeln und Minze servieren.
+                    <br>Die Frühlingszwiebeln und Minze fein schneiden. <br> Joghurt mit Harissa verrühren und mit Salz abschmecken.<br> Die Pita-Brote kurz erwärmen (in der Pfanne oder im Toaster).<br> Die Brote aufschneiden, mit der Linsen-Gemüse-Füllung
+                    befüllen und mit einem Klecks Harissa-Joghurt, Frühlingszwiebeln und Minze servieren.
                 </p>
             </div>
             <div class="section-footer">
@@ -145,7 +140,7 @@
     </section>
     <footer>
         <div class="footer_img_1">
-            <img src="./img/profilesven.png" alt="#">
+            <img src="./img/logo.png" alt="#">
         </div>
         <div class="footer_img_2">
             <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook_white.png" alt="facebook logo white hover green"></a>
@@ -174,12 +169,12 @@
 
             if (isNaN(baseQty)) return;
 
-            const qtyRegex = /^\s*(\d+([.,]\d+)?)\s*/; 
+            const qtyRegex = /^\s*(\d+([.,]\d+)?)\s*/;
             const match = originalText.match(qtyRegex);
 
             if (match) {
                 const unitAndName = originalText.substring(match[0].length).trim();
-                
+
                 let newQty = (baseQty / BASE_SERVINGS) * newServings;
 
                 if (newQty >= 1) {
@@ -213,6 +208,6 @@
             navMobile.classList.toggle('d-none');
         });
     });
-
 </script>
+
 </html>
