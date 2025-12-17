@@ -1,241 +1,245 @@
 *,
 *::before,
-*::after{
-  box-sizing: border-box;
+*::after {
+    box-sizing: border-box;
 }
 
-html, body{
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-img, video, iframe{
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.page{
-  width: 1440px;
-  height: 1200px;
-  margin: 0 auto;
-  background: #fff;
-}
-
-.container{
-  width:1440px;
-  height: 400px;
-  margin: 0 auto;
-  padding: 0 200px;
-  box-sizing: border-box;
-}
-
-
-.section1{
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 60px;
-}
-
-.section1-left{
-  flex: 0 0 400px;
-  max-width: 400px;
-}
-.section1-right{
-  height: 400;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.section1-right > .r-part{
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.section1-right > .r-part:last-child{
-  align-items: flex-end;
-}
-
-
-.hero-img{
-  width: 400px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-}
-
-#container1{ background: #fff; }
-#container2{ background: rgb(242,242,242); text-align: center; }
-#container3{ background: #fff; }
-
-
-#container1{
-  position: relative;
-}
-
-
-
-.section1-bottom{
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-
-
-.btn{
-  margin-bottom: 40;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  background: rgb(0,128,0);
-  color: #fff;
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-}
-
-.text{
-  height: 133px;
-  margin: 0;
-  padding: 16px;
-  background: #fff;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 1.4;
-  border: none;
-}
-
-
-.section2{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.section2-top{
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.section2-bottom{
-  height: 300px;
-  display: flex;
-  align-items: baseline;
-  justify-content: normal;
-}
-
-.title-center{
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  color: #000;
-}
-
-.cards{
-  display: flex;
-  gap: 220px;
-  align-items: center;
-  justify-content: center;
-}
-#container2{
-  container-type: inline-size;
-}
-@container (max-width: 400px){
-  .cards{
-    flex-direction: column;
+html,
+body {
     align-items: center;
-    gap: 20px;
-  }
-}
-.card{
-  text-decoration: none;
-  color: #000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.card-img{
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  overflow: hidden;
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.card-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.page {
+    width: 1440px;
+    height: 1200px;
+    margin: 0 auto;
+    background: #fff;
 }
 
-
-.section3{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.container {
+    width: 1440px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0 160px;
+    box-sizing: border-box;
 }
 
-.section3-top{
-  height: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.section1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
 }
 
-.section3-bottom{
-  height: 325px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+.section1-left {
+    flex: 0 0 400px;
+    max-width: 400px;
 }
 
-.compare-grid{
-  width: 100%;
-  max-width: 1040px;
-  margin-top: 00px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 60px;
+.section1-right {
+    height: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
-.compare-text{
-  margin: 0;
-  flex: 1;
-  max-width: 750px;
-  background: #fff;
-  padding: 16px;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 1.4;
-  border: none;
+.section1-right>.r-part {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.compare-img{
-  width: 200px;
-  height: 200px;
-  background: #000;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
+.section1-right>.r-part:last-child {
+    align-items: flex-end;
+}
+
+.hero-img {
+    width: 400px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+#container2 {
+    background: rgb(242, 242, 242);
+    text-align: center;
+}
+
+#container3 {
+    background: #fff;
+}
+
+#container1 {
+    position: relative;
+}
+
+.section1-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btn {
+    margin-bottom: 40;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background: rgb(0, 128, 0);
+    color: #fff;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.text {
+    height: 133px;
+    margin: 0;
+    padding: 16px;
+    background: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    border: none;
+}
+
+.section2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2-top {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2-bottom {
+    height: 300px;
+    display: flex;
+    align-items: baseline;
+    justify-content: normal;
+}
+
+.title-center {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+}
+
+.cards {
+    display: flex;
+    gap: 220px;
+    align-items: center;
+    justify-content: center;
+}
+
+#container2 {
+    container-type: inline-size;
+}
+
+@container (max-width: 400px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.card {
+    text-decoration: none;
+    color: #000;
+}
+
+.card-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section3 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section3-top {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3-bottom {
+    height: 325px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.compare-grid {
+    width: 100%;
+    max-width: 1040px;
+    margin-top: 00px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.compare-text {
+    margin: 0;
+    flex: 1;
+    max-width: 750px;
+    background: #fff;
+    padding: 16px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    border: none;
+}
+
+.compare-img {
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
 }
 
 @media (max-width: 950px) {
-  .container2 {
+    .container2 {
         flex-direction: column;
         height: auto;
-
-  }
+    }
 }
