@@ -119,3 +119,21 @@ fieldset {
 :-ms-input-placeholder {
     color: #888;
 }
+
+.thanks {
+    max-width: 600px;
+    text-align: center;
+}
+
+.thanks h1 {
+    padding: 32px;
+}
+
+.thanks a {
+    color: #008000;
+}
+
+.thanks a:hover {
+    cursor: pointer;
+    color: #019b01;
+}
