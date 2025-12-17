@@ -335,6 +335,52 @@ main {
         padding-left: calc((100% - 1440px) / 2);
         padding-right: calc((100% - 1440px) / 2);
     }
+    .main-recipe-day {
+        flex-direction: row;
+    }
+    .main-recipe-day h1 {
+        font-size: 60px;
+        text-align: left;
+    }
+    .main-recipe-day p {
+        font-size: 30px;
+    }
+    .main-day-recipe-txt-btn {
+        max-width: 900px;
+        gap: 32px;
+    }
+    .main-recipe-day button {
+        width: 30%;
+    }
+    .suggestion h2 {
+        font-size: 36px;
+    }
+    .suggestion-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card img {
+        height: 300px;
+        width: 300px;
+    }
+    .card p {
+        font-size: 32px;
+    }
+    .tipp h2 {
+        font-size: 36px;
+    }
+    .tipp-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .tipp-content p {
+        font-size: 30px;
+        text-align: left;
+    }
+    .tipp-content img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 
