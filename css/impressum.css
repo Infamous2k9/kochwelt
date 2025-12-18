@@ -15,7 +15,7 @@ p {
 }
 
 section:first-of-type {
-    height: 90%;
+    flex-grow: 1;
 }
 
 .impressum {

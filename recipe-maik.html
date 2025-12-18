@@ -8,8 +8,10 @@
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/recipe-maik.css">
-    <title>Kochwelt - Rezept Maik</title>
+    <link rel="stylesheet" href="./css/recipe-andre.css">
+
+
+    <title>Kochwelt</title>
 </head>
 
 <body>
@@ -17,6 +19,7 @@
         <a href="index.html">
             <img src="./img/logo.png" alt="Headline Brand Logo" class="header-brand-logo">
         </a>
+
         <nav class="header-nav">
             <div class="hamburger" id="hamburger-menu">
                 <span class="line"></span>
@@ -49,11 +52,12 @@
                     <a href="index.html">Start</a>
                 </li>
                 <li class="dropdown">
-                    <a Rezept href="recipe.html">Rezept des Tages</a>
+                    <a Rezept href="recipe.html" class="active">Rezept des Tages</a>
                     <div class="dropdown-content">
                         <a href="recipe-andre.html">Rezept Andre</a>
                         <a href="recipe-maik.html">Rezept Maik</a>
                         <a href="recipe-sven.html">Rezept Sven</a>
+
                     </div>
                 </li>
                 <li>
@@ -65,47 +69,90 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <div class="section-header">
-            <h2>Stegt flæsk med persillesovs</h2>
-            <h3>Gebratenes Schweinefleisch mit Petersiliensauce</h3>
-            <img src="./img/stegt-flaesk.jpg" alt="">
-            <div class="meta-info">
-                <div class="meta-info-itme"><img src="./img/icons/clock-regular.svg" alt="">45 Min</div>
-                <div class="meta-info-itme"><img src="./img/icons/brain-solid.svg" alt="">simpel</div>
-                <div class="meta-info-itme"><img src="./img/icons/calendar-alt-regular.svg" alt="">15.03.2023</div>
-            </div>
-        </div>
-        <div class="section-content">
-            <div class="rechner-input">
-                <p>Zutaten für:</p>
-                <input placeholder="4" min="1" id="servingsAmount" type="number" value="4">
-                <button type="submit">Portionen</button>
-            </div>
-            <div class="content-table">
+
+    <main>
+        <section class="content">
+            <header class="content-head">
+                <h2>Stegt flæsk med persillesovs</h2>
+                <h3>Gebratenes Schweinefleisch mit Petersiliensauce</h3>
+                <figure class="header-img">
+                    <img src="./img/stegt-flaesk.jpg" alt="stegt-flaesk">
+                </figure>
+
+
+                <ul class="batches">
+                    <li>
+                        <img src="./img/icons/clock-regular.svg" class="icon-time">
+                        <span>45 Min.</span>
+                    </li>
+                    <li>
+                        <img src="./img/icons/brain-solid.svg" class="icon-brain">
+                        <span>Einfach</span>
+                    </li>
+                    <li>
+                        <img src="./img/icons/calendar-alt-regular.svg" class="icon-calender">
+                        <span>15.03.2023</span>
+                    </li>
+                </ul>
+            </header>
+
+            <section class="ingridients">
+                <p>Zutaten für</p>
+                <div>
+                    <input type="number" id="servingsAmount" min="1" data-servings-current-amount="4" data-servings-base-amount="4" value="4">
+                    <button id="servingBtn">Portionen</button>
+                </div>
                 <table>
                     <tr>
-                        <th>Zutaten:</th>
-                        <td>800 g Schweinefleisch in Scheiben 1,5 cm</td>
-                        <td>grobes Salz</td>
-                        <td>4 El Butter</td>
-                        <td>2 El Weitzenmehl</td>
-                        <td>500 ml Milch</td>
-                        <td>2 Hand voll Petersilie, fein gehackt</td>
-                        <td>frischer gemahlener Pfeffer (nach geschmack)</td>
+                        <td><span id="ingredient" data-ingridient-amount="800" data-ingridient-base-amount="800">g</span></td>
+                        <td><span>Schweinefleisch in Scheiben 1,5 cm</span></td>
                     </tr>
                     <tr>
-                        <th>Zubehör:</th>
-                        <td>800 - 1000 g Kartoffeln (neue ernte)</td>
+                        <td><span id="ingredient"></span></td>
+                        <td><span>grobes Salz</span></td>
+                    </tr>
+                    <tr>
+                        <td><span id="ingredient" data-ingridient-amount="250" data-ingridient-base-amount="250">g</span></td>
+                        <td><span>Porree</span></td>
+                    </tr>
+                    <tr>
+                        <td><span id="ingredient" data-ingridient-amount="4" data-ingridient-base-amount="4"> EL</span></td>
+                        <td><span>Butter</span></td>
+                    </tr>
+                    <tr>
+                        <td><span id="ingredient" data-ingridient-amount="2" data-ingridient-base-amount="2"> EL</span></td>
+                        <td><span>Weitzenmehl</span></td>
+                    </tr>
+                    <tr>
+                        <td><span id="ingredient" data-ingridient-amount="500" data-ingridient-base-amount="500">ml</span></td>
+                        <td><span>Milch</span></td>
+                    </tr>
+                    <tr>
+                        <td><span id="ingredient" data-ingridient-amount="2" data-ingridient-base-amount="2"> Hand voll</span></td>
+                        <td><span>Petersilie, fein gehackt</span></td>
+                    </tr>
+                    <tr>
+                        <td><span></span></td>
+                        <td><span>frischer gemahlener Pfeffer (nach geschmack)</span></td>
+                    </tr>
+                    <tr>
+                        <td><span id="ingredient" data-ingridient-amount="1000" data-ingridient-base-amount="1000">g</span></td>
+                        <td><span>Kartoffeln (neue ernte)</span></td>
                     </tr>
                 </table>
-            </div>
-            <div class="content-info">
+            </section>
+            <section class="preparation">
                 <h3>Zubereitung</h3>
-                <div class="meta-info">
-                    <div class="meta-info-itme"><img src="./img/icons/clock-regular.svg" alt="">ca. 15 Minuten</div>
-                    <div class="meta-info-itme"><img src="./img/icons/clock-regular.svg" alt="">Gesamtzeit ca. 45 Minuten</div>
-                </div>
+                <ul class="batches">
+                    <li>
+                        <img src="img/icons/clock-regular.svg" class="icon-time" alt="">
+                        <span>Zubereitung 15 Min.</span>
+                    </li>
+                    <li>
+                        <img src="img/icons/clock-regular.svg" class="icon-time" alt="">
+                        <span>Gesamt 45 Min.</span>
+                    </li>
+                </ul>
                 <p>
                     <strong>Schweinefleisch</strong><br> Streuen Sie etwas Salz über das Schweinefleisch <br> und legen Sie es auf einen Rost über einer mit Backpapier <br> ausgelegten festen Pfanne.<br>
                     <br> Die Schweinefleischscheiben im vorgeheizten Backofen <br> bei 175 Grad heißer Luft 30-40 Minuten gebraten <br> und dabei einige Male gedreht.<br>
@@ -118,16 +165,17 @@
                     <strong>Petersilien Sauce</strong><br> Butter in einem Topf bei schwacher Hitze schmelzen, <br> Mehl unterrühren, bis eine glatte Masse entsteht, <br> und dann nach und nach Milch einrühren. <br> Die Petersilien-Sauce ca. 5 Minuten
                     bei mittlerer Hitze <br> unter rühren kochen, mit der Petersilie sowie Salz und Pfeffer abschmecken.
                 </p>
-            </div>
-            <div class="section-footer">
-                <h3>Rezept erstellt von</h3>
-                <div class="img_txt">
-                    <img src="./img/profilmaik.png" alt="">
-                    <p>Maik</p>
+                <div class="create-by">
+                    <h4>Rezept erstellt von</h4>
+                    <div class="author">
+                        <img src="img/profilmaik.png" alt="Profilbild">
+                        <span>Maik</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        </section>
+    </main>
+
     <footer>
         <div class="footer_img_1">
             <img src="./img/logo.png" alt="logo chefs hat and text kochwelt white">
@@ -144,6 +192,8 @@
         </div>
     </footer>
 </body>
+<script src="./ingredients.js"></script>
+
 <script>
     const hamburgerMenu = document.getElementById('hamburger-menu');
     const navMobile = document.getElementById('navMobile');
