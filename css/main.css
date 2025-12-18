@@ -4,6 +4,14 @@
     font-family: Raleway-Regular;
 }
 
+body {
+    height: 100vh;
+}
+
+main {
+    height: 90%;
+}
+
 h1 {
     font-size: 60px;
 }
@@ -17,7 +25,7 @@ h3 {
 }
 
 p {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 
@@ -148,7 +156,7 @@ a {
 }
 
 
-/* conten site */
+/* content site */
 
 main {
     margin-top: 60px;
@@ -277,7 +285,7 @@ main {
         text-align: left;
     }
     .main-recipe-day p {
-        font-size: 30px;
+        font-size: 21px;
     }
     .main-day-recipe-txt-btn {
         max-width: 900px;
@@ -314,68 +322,7 @@ main {
         align-items: flex-start;
     }
     .tipp-content p {
-        font-size: 30px;
-        text-align: left;
-    }
-    .tipp-content img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media (min-width: 1921px) {
-    .main-recipe-day {
-        padding-left: calc((100% - 1440px) / 2);
-        padding-right: calc((100% - 1440px) / 2);
-    }
-    .suggestion {
-        padding-left: calc((100% - 1440px) / 2);
-        padding-right: calc((100% - 1440px) / 2);
-    }
-    .tipp {
-        padding-left: calc((100% - 1440px) / 2);
-        padding-right: calc((100% - 1440px) / 2);
-    }
-    .main-recipe-day {
-        flex-direction: row;
-    }
-    .main-recipe-day h1 {
-        font-size: 60px;
-        text-align: left;
-    }
-    .main-recipe-day p {
-        font-size: 30px;
-    }
-    .main-day-recipe-txt-btn {
-        max-width: 900px;
-        gap: 32px;
-    }
-    .main-recipe-day button {
-        width: 30%;
-    }
-    .suggestion h2 {
-        font-size: 36px;
-    }
-    .suggestion-content {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .card img {
-        height: 300px;
-        width: 300px;
-    }
-    .card p {
-        font-size: 32px;
-    }
-    .tipp h2 {
-        font-size: 36px;
-    }
-    .tipp-content {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    .tipp-content p {
-        font-size: 30px;
+        font-size: 21px;
         text-align: left;
     }
     .tipp-content img {
@@ -452,6 +399,75 @@ button a {
     display: none;
 }
 
+@media (min-width: 1921px) {
+    .header-site {
+        padding-left: calc((100% - 1440px) / 2);
+        padding-right: calc((100% - 1440px) / 2);
+    }
+    footer {
+        padding-left: calc((100% - 1440px) / 2);
+        padding-right: calc((100% - 1440px) / 2);
+    }
+    .main-recipe-day {
+        padding-left: calc((100% - 1440px) / 2);
+        padding-right: calc((100% - 1440px) / 2);
+    }
+    .suggestion {
+        padding-left: calc((100% - 1440px) / 2);
+        padding-right: calc((100% - 1440px) / 2);
+    }
+    .tipp {
+        padding-left: calc((100% - 1440px) / 2);
+        padding-right: calc((100% - 1440px) / 2);
+    }
+    .main-recipe-day {
+        flex-direction: row;
+    }
+    .main-recipe-day h1 {
+        font-size: 60px;
+        text-align: left;
+    }
+    .main-recipe-day p {
+        font-size: 30px;
+    }
+    .main-day-recipe-txt-btn {
+        max-width: 900px;
+        gap: 32px;
+    }
+    .main-recipe-day button {
+        width: 30%;
+    }
+    .suggestion h2 {
+        font-size: 36px;
+    }
+    .suggestion-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card img {
+        height: 300px;
+        width: 300px;
+    }
+    .card p {
+        font-size: 32px;
+    }
+    .tipp h2 {
+        font-size: 36px;
+    }
+    .tipp-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .tipp-content p {
+        font-size: 30px;
+        text-align: left;
+    }
+    .tipp-content img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
 
 /* Mobile-Version */
 
@@ -459,13 +475,15 @@ button a {
     footer {
         height: 180px !important;
         padding: 0px 32px 0px 32px;
+        flex-direction: column;
+        justify-content: center;
     }
     .footer_img_1 img {
-        height: 32px;
+        height: 42px;
         width: auto;
     }
     .footer_img_2 img {
-        height: 16px;
+        height: 32px;
         width: auto;
         margin-left: 8px;
     }

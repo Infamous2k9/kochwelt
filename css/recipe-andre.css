@@ -27,6 +27,7 @@ h4 {
 }
 
 .content {
+    height: 90%;
     padding-left: 32px;
     padding-right: 32px;
 }
